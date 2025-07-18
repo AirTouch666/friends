@@ -1,23 +1,21 @@
 name: 友链模板
-description: 自助添加友链。
-labels: ['审核中']
+description: 自助添加友链
+labels: ['checklist']
 body:
   - type: checkboxes
     id: checks
     attributes:
       label: 检查清单
-      description: 请认真检查以下清单中的每一项，并在相符的项前打勾。（在满足所有条件后才会通过，不满足的项请不要勾选）
+      description: 请认真检查以下清单中的每一项，并在相符的项前打勾。
       options:
         - required: true
-          label: 合法的、非营利性、无商业广告、无木马植入。
+          label: 网站性质不涉及商业/政治/色情/灰色/版权/破解/企业/经营/影音/小说/软件破解/内容不明等，内容有一定质量
         - required: false
-          label: 有实质性原创内容的 HTTPS 站点，发布过至少 5 篇原创文章，内容题材不限。
+          label: 非空壳网站，能长期存活和更新
         - required: false
           label: 有独立域名，非免费域名。
         - required: false
-          label: 博客已运行至少半年，非刚搭建好。
-        - required: false
-          label: 先友后链：与 **博主** 有至少 5 次有效互动（有内容的留言或者 issue 等）。
+          label: 启用HTTPS连接，证书正常，全球各地均可访问
   - type: textarea
     id: config-file
     validations:
