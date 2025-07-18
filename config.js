@@ -39,7 +39,7 @@ export const config = {
     
     // 需要排除的Issue标签
     // 包含这些标签的Issue将不会被解析
-    exclude_labels: ["审核中", "缺少互动", "缺少文章", "风险网站"],
+    exclude_labels: ["checklist", "404", "suspend"],
   },
 
   // 链接检查器配置
@@ -50,11 +50,11 @@ export const config = {
     // 包含这些关键词的Issue将被检查
     include_keyword: '# 友链信息',
     // 包含这些标签的Issue将不会被检查
-    exclude_labels: ["审核中", "缺少互动", "缺少文章", "风险网站"],
+    exclude_labels: ["checklist", "404", "suspend"],
 
     // 目标链接
     // 检查网站是否包含此链接
-    targetLink: 'https://xaoxuu.com',
+    targetLink: 'https://blog.airtouch.top',
     
   },
 
@@ -67,7 +67,7 @@ export const config = {
     // 包含这些关键词的Issue将被检查
     include_keyword: '# 站点信息',
     // 包含这些标签的Issue将不会被检查
-    exclude_labels: ["审核中", "风险网站"],
+    exclude_labels: ["checklist", "404", "suspend", "active"],
 
     // 主题标识meta标签选择器
     meta_tag: 'meta[name="hexo-theme"]',
